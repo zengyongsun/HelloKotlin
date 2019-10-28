@@ -9,4 +9,11 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
     }
+
+    fun String.firstChar(): String {
+        if (this.length == 0) {
+            return ""
+        }
+        return this[0].toString()
+    }
 }
